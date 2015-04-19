@@ -6,7 +6,7 @@ Yep, that's right. Another freakin' animated scroll to target deal. We Be Scroll
 
 
 ## How's it Work Then?
-Set up is super simple. Add the data-attribute `data-scroll="yourID"` to the link, with your unique ID on the target section. Rinse, repeat as many times as necessary. Snazz it up with an Easing lib if you that's your thing.
+Set up is a super simple. Add the data-attribute `data-scroll="yourID"` to the link, with your unique ID on the target section. Rinse, repeat as many times as necessary. Snazz it up with an Easing lib if you that's your thing.
 
 Your structure will look a little something like this
 
