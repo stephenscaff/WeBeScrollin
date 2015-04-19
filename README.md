@@ -1,9 +1,8 @@
 # We Be Scrollin
-A little Jquery plugin (2kb - unminified) that snags and display Instagram pics by User or HashTag, with some caption styles.. See it in action at this stupid long url: [everydayiminstagrammin.stephenscaff.com](http://everydayiminstagrammin.stephenscaff.com/)
 
+##A stupid simple jquery plugin for animating scroll to targets via data-attributes.
 
-## Wait, Another Freakin' Instagram Plugin?
-Yep, that's right. Another freakin' animated scroll to target deal. We Be Scrollin is super slim (1 kbs) Jquery plugin enabled via data-attributes, with a few options for speed, easing integration, top offset, active classes, and a callback function.
+Yep, that's right. Another freakin' animated scroll to target deal. We Be Scrollin is super slim (2 kbs) Jquery plugin enabled via data-attributes, with a few options for speed, easing integration, top offset, active classes, and a callback function.
 
 
 ## How's it Work Then?
