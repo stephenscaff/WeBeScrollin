@@ -1,0 +1,49 @@
+/*----------------------------------------------   
+--overlay
+-----------------------------------------------  */
+@mixin overlay($bgColor: #000, $bgOpacity: 0.6){
+
+position:	relative;
+	&:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba($bgColor, $bgOpacity);
+	z-index: 0;
+	
+	}
+	
+	.row, .content{
+		position:	relative;
+		z-index:	2;
+	}
+}
+
+
+/*----------------------------------------------   
+--Gradient Overlay
+-----------------------------------------------  */
+@mixin gradient-overlay($colorFirst: $color-alpha, $colorLast: $color-beta, $bgOpacity:0.7){
+	position:	relative;
+	color:	#fff;
+	
+	&:after{
+		@include linear-gradient(135deg, $colorFirst 1%, $colorLast 62%);
+		opacity:	$bgOpacity;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+		
+		.row, .content{
+			position:	relative;
+			z-index:	9;
+		}
+	}
+}

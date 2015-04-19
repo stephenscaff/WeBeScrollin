@@ -1,0 +1,405 @@
+/*----------------------------------------------   
+--Setup
+-----------------------------------------------  */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+html {
+	width: 100%;
+}
+
+
+/*----------------------------------------------   
+--Typography
+-----------------------------------------------  */
+body {
+  font-family: $font-paragraph;
+  color: #3A546B;
+  line-height: $base-lineheight;
+  background-color:	#fff;
+  
+  
+/*----------------------------------------------   
+--Fluid body sizing
+-----------------------------------------------  */
+  font-size: 100%;
+  
+  @media (min-width: $mq-small) {
+    font-size: 110%
+  }
+  @media (min-width: $mq-med) {
+    font-size: 120%
+  }
+  @media (min-width: $mq-large) {
+    font-size: 140%
+  }
+  @media (min-width: $mq-xlarge) {
+    font-size: 160%
+  }
+  @media (min-width: $mq-xxlarge) {
+    font-size: 170%
+  }
+  @media (min-width: $mq-xxxlarge) {
+    font-size: 180%
+  }
+}
+
+/*----------------------------------------------   
+--Images
+-----------------------------------------------  */
+img,object,embed{
+  max-width:100%;
+  width: 100%;
+  height:auto;
+  margin:0 auto;
+}
+
+img{
+  -ms-interpolation-mode:bicubic;
+  border: 0;
+}
+
+/*----------------------------------------------   
+--Headers
+-----------------------------------------------  */
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+  font-family: $font-header;
+  text-rendering:optimizeLegibility; 
+}
+
+h1 {
+  font-size: 4.2em;
+  font-size: 11vmin;
+  line-height: 1.2;
+  margin-top: 0.80898876em;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2.7em;
+  font-size: 8vmin;
+  line-height: 1.30909091em;
+  margin-top: 1.3em;
+  margin-bottom: 0.7em;
+}
+
+h2 span{
+  font-size: 50%;
+  color: #ccc;
+  margin: 0 auto;
+  border-top: 2px solid #ccc
+}
+
+h3 {
+  font-size: 1.6em;
+  font-size: 4.8vmin;
+  line-height: 1.1em;
+  margin-top: 1.1em;
+  margin-bottom: 0.7em;
+}
+h4 {
+  font-size: 1.6em;
+  line-height: 1.1em;
+  margin-top: 1.25em;
+  margin-bottom: 1.1em;
+}
+
+p, ul, ol, pre, table, blockquote {
+  font-family: $font-paragraph;
+  margin-bottom:	0.75em;
+}
+
+
+/*----------------------------------------------   
+--Code
+-----------------------------------------------  */
+code{
+  overflow-x:scroll;
+  width: 100%;
+}
+pre{
+  background: #050F38;
+  padding: 0.7em 1.5em;
+  margin:	2em auto;
+  color: #C9E1FF;
+  width: 100%;
+  font-size: 90%;
+  white-space: pre-wrap !important;
+  border-radius: 4px;
+  position: relative;
+  @media (max-width: $mq-med) {
+    overflow-x:scroll;
+  }  
+}
+code, pre{
+	font-family:	Monaco, 'Andale Mono', monospace;
+	 direction: ltr;
+	text-align: left;
+	word-spacing: normal;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+code.inline {
+	font-size: 80%;
+	background-color: #fefefe;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: .1em .3em .25em;
+	color: #2F4A65;
+	border-radius: 4px;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+/*----------------------------------------------   
+--Row Class
+-----------------------------------------------  */
+.row{  
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (min-width: $mq-small) {
+    max-width:	75%;
+  }
+  @media (min-width: $mq-med) {
+   	max-width: 70%;
+ 	}
+ 	@media (min-width: $mq-large) {
+   	max-width: 60%
+ 	}
+ 	@media (min-width: $mq-xlarge) {
+   	max-width: 45em
+ 	}
+}
+
+main{
+  position: relative;
+  z-index: 1;
+  //padding-top: 2em;
+}
+hr.sep{
+  border-top:2px solid #aaa;
+  border-bottom: 0;
+  max-width: 20%;
+  margin: 0;
+}
+
+/*----------------------------------------------   
+--Media
+-----------------------------------------------  */
+figure{
+position:	relative;
+width:	100%;
+margin:	0 auto;
+	@include gradient-overlay($color-alpha, $color-beta, 0.7);
+	
+	img{
+		display:	inherit;
+	}
+}
+
+
+/*----------------------------------------------   
+--Tables
+-----------------------------------------------  */
+table {
+  max-width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.table {
+	font-family:	$font-header;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.6; 
+  border-collapse: collapse;
+  border-spacing: 0;
+  
+  th,td {
+    padding: 0.85em;
+    vertical-align: top;
+    line-height: 1.6;
+    text-align: left;
+    border-top: 1px solid #eeeeee; }
+  th {
+    font-weight: 600; }
+  thead th {
+    vertical-align: bottom; }
+  thead {
+    color: $color-alpha; }
+  
+  colgroup + thead tr:first-child th,
+  colgroup + thead tr:first-child td,
+  thead:first-child tr:first-child th,
+  thead:first-child tr:first-child td {
+    border-top: 0; }
+  tbody + tbody {
+    border-top: 2px solid; }
+  tbody tr:hover td,
+  tbody tr:hover th {
+    background-color: $color-alpha;
+    color:	#fff;
+    @include transition(background-color 0.7s ease);
+    }
+}
+ 
+ 
+ /*----------------------------------------------   
+ --Button
+ -----------------------------------------------  */
+.btn{
+ color: #fff;
+ font-family: $font-header;
+ border: 1px solid #fff;
+ display: inline-block;
+ vertical-align: middle;
+ padding: 0.6em 1.5em;
+ margin:	1em 0;
+ border-radius: 38px;
+ font-size: 90%;
+ position:	relative;
+ overflow:	hidden;
+ @include transition(all 0.7s ease);
+ 
+ &:hover {
+		text-shadow:	0 0 10px rgba(255,255,255,0.9);
+		box-shadow:	0 0 7px rgba(255,255,255,0.9);
+		@include transition(all 0.7s ease);
+ }
+}
+ 
+
+
+/*----------------------------------------------   
+--Header
+-----------------------------------------------  */
+header{
+  background: #fff;
+  background:	#465776;
+  background:	rgba(32, 60, 164, 0.91);
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0	0.5em;
+  z-index: 9;
+  
+  .logo{
+  	display: inline;
+  	width: 3em;
+  	vertical-align: middle;
+  	margin: 1em .2em 0;
+  	color: #fff;
+  	font-size: 1.8em;
+  	border-bottom: 3px solid #fff;
+  	position: relative;
+  	line-height: 1.6;
+  	
+  	a{
+  		color:	#fff;
+  		@include transition(all 0.7s ease);
+  		
+  		&:hover{
+  			color:	rgba(255,255,255,0.8);
+  			@include transition(all 0.7s ease);
+  		}
+  	}
+  }
+  
+  nav{
+  	display:	inline;
+    ul{
+      font-family: $font-header;
+      display:block;
+      margin: 0;
+      padding: 1em 0.5em;
+      float: right;
+    }
+    li{
+      display:inline-block;
+      margin-left: 0.75em;
+    }
+    a{
+      color:	#fff;
+      text-decoration:none;
+      @include transition(all 0.7s ease);
+      
+      &:hover, &.active{
+      	color:	rgba(255,255,255,0.6);
+      	@include transition(all 0.7s ease);
+      }
+    }
+  }
+}
+
+/*----------------------------------------------   
+--Content
+-----------------------------------------------  */
+.sect-content{
+  padding: 3em 0;
+  
+  p:first-of-type{
+  	font-size:	140%;
+  	line-height:	1.8;
+  }
+  
+  h2, h3, h4{
+  	color:	$color-alpha;
+  }
+}
+
+
+/*----------------------------------------------   
+--Sect-Banner
+-----------------------------------------------  */ 
+.sect-banner{
+	background-image:	url(../images/banner-bg.gif);
+	background-size:	cover;
+	background-position:	50%;
+	color:	#fff;
+	height:	90vh;
+	display:	table;
+	width:	100%;
+	@include gradient-overlay(#005AFF, #000397, 0.85);
+
+.row{
+	display:	table-cell;
+	vertical-align:	bottom;
+	padding:	2em 2em 1em;
+	z-index:	999;
+	position:	relative;
+	
+	p{
+		font-size: 6vmin;
+		line-height: 1.5;
+		margin: 0.4em 0;
+		}
+		
+		br{
+			@media (max-width: $mq-med) {
+			  display:	none;
+			}
+		}
+	}
+}
+
+
+/*----------------------------------------------   
+--Footer
+-----------------------------------------------  */
+footer{
+	padding:	1em 0;
+	border-top:	1px solid #ddd;
+}

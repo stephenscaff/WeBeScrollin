@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+
+<!-- Title and Meta
+================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>We Be Scrolln' | by Stephen Scaff</title>
+
+<meta name="description" content="A simple little plugin to display an instagram feed, with some captions styles.">
+<meta name="author" content="Stephen Scaff">
+
+<!-- Mobile Specific Meta
+================================================== -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+
+<!-- CSS
+================================================== -->
+<link	rel="stylesheet"	href="css/app.css"	/>
+
+</head>
+
+<!-- heade
+================================================== -->
+<header>
+		<h1 class="logo"><a data-scroll="sect-top" href="#">s</a></h1>
+  <nav>
+  	<ul>
+     <li><a data-scroll="sect-docs" href="#">Docs</a></li>
+     <li><a data-scroll="sect-one" href="#">One</a></li>
+     <li><a data-scroll="sect-two" href="#">Two</a></li>
+     <li><a data-scroll="sect-three" href="#">Three</a></li>
+   </ul>
+  </nav>
+</header>
+
+
+<!-- Main
+================================================== -->
+<main role="main">
+
+	<section class="sect-content sect-banner" id="sect-top">
+ 	<div class="row">
+  	<h1>We Be Scrollin</h1>
+    <p>A stupid simple jquery plugin for animating <br/>scroll to targets via data-attributes</p>
+    
+    <a class="btn" href="https://github.com/stephenscaff/WeBeScrollin">Download from Github</a>
+
+		</div>
+	</section>
+
+	<section class="sect-content" id="sect-docs">
+		<div class="row">
+  	<p>Yep, that's right. Another freakin' animated scroll to target deal. We Be Scrollin is super slim (1 kbs) Jquery plugin enabled via data-attributes, with a few options for speed, easing integration, top offset, active classes, and a callback function.      
+      </p>
+     
+
+				<h3>Let's set stuff up</h3>
+				
+				<p>Set up is super simple. Add the data-attribute <code class="inline">data-scroll="yourID"</code> to the link, with your unique ID on the target section. Rinse, repeat as many times as necessary. Snazz it up with an Easing lib if you that's your thing.</p>
+      
+    <p>Your structure will look a little something like this:</p>
+      
+      
+<pre>
+	<code>
+/*---------------------------  
+--Link: Add 'data-scroll' to link with unique name
+----------------------------- */
+&lt;a data-scroll="sect-one" href="#"&gt;Top&lt;/a&gt;
+
+/*---------------------------  
+--Target: Apply that unique name as an id
+-----------------------------  */
+&lt;section id="sect-one"&gt;&lt;/section&gt;
+</code>
+</pre>
+      
+      
+    <h3>The Meat & Potatos</h3>
+     
+    <p>With our nav and section ids in place, lets go ahead and initialize the badboy off the html doc.
+      
+<pre>
+<code>
+$('html').weBeScrollin({
+ offset: '40',
+ addActive: 'true',
+ scrollSpeed: 500,
+ scrollEase: 'easeOutBounce',
+ 
+ complete : function() {
+     $( '.mobile-nav' ).removeClass('js-open');
+   },
+});
+</code>
+</pre>
+      
+   
+   
+   <!-- Options Table
+   ================================================== -->    
+   <h3>Options / Defaults</h3>
+       
+   <p>A few essential options are available, <code class="inline">offset</code> to make room for fixed navs, <code class="inline">scrollSpeed</code> to change to animation's speed, <code class="inline">scrollEase</code> to enable scroll acceleration/deceleration easings (include an easing lib for more options), <code class="inline">addActive</code> to add an active class to the clicked nav item (currently, the active class relies on a click event, so use a lib like Waypoints or Inview if true viewport detection is required), and let's not forget a simple after animation callback (useful for closing a mobile nav or triggering another animation).</p> 
+       
+   <div class="scroller">
+	   <table class="table">
+     <thead>
+       <tr>
+       <th>Option</th>
+       <th>Description</th>
+       <th>Default Value</th>
+       </tr>
+     </thead>
+     
+     	<tbody>
+	      <tr>
+	      <th scope="row">offset</th>
+	      <td>Scroll offset from top</td>
+	      <td>'0'</td>
+	      </tr>
+	      
+	      <tr>
+	      <th scope="row">scrollSpeed</th>
+	      <td>Speed of scroll animation</td>
+	      <td>700</td>
+	      </tr>
+	      
+	      <tr>
+	      <th scope="row">scrollEase</th>
+	      <td>add Easing equations</td>
+	      <td>Swing</td>
+	      </tr>
+	      
+	      <tr>
+	      <th scope="row">addActive</th>
+	      <td>Enable Active link class</td>
+	      <td>False</td>
+	      </tr>
+	      
+	      <tr>
+	      <th scope="row">complete : function() {}</th>
+	      <td>Callback function</td>
+	      <td>Null</td>
+	      </tr>
+	  		 </tbody>
+	  		</table>
+ 			</div>
+ 			
+ 			<h3>The see you scrollin'</h3>
+ 			<p>You can snatch up Web Be Scrollin on Github <a href="https://github.com/stephenscaff/WeBeScrollin">right here</a>. </p>
+ 			
+			</div>
+		</section>
+
+<figure class="overlay">
+<img src="https://unsplash.imgix.net/photo-1422222948315-28aadb7a2cb8?q=75&fm=jpg&s=cfeadbd7a991e58b553bee29a7eeca55">
+</figure>
+
+	<section class="sect-content" id="sect-one">
+		<div class="row">
+			<h2><span>01</span> Section One</h2>
+			
+			
+			<p>Cupim prosciutto pig beef ribs swine. Pig cupim jerky, frankfurter jowl andouille prosciutto hamburger. Cupim picanha shankle ball tip. Jowl pork kevin, salami porchetta kielbasa chuck pancetta capicola turkey jerky cow. Hamburger bacon fatback, leberkas picanha ribeye short ribs tail pork belly andouille. Bacon fatback venison filet mignon strip steak, ground round biltong tenderloin drumstick jerky.</p>
+			
+			
+			<h3>Stink Bettles Get All The Love</h3>
+			
+			
+			<p>Chicken turkey strip steak, landjaeger jerky meatloaf turducken spare ribs ribeye kevin sausage beef. Shoulder meatball capicola kielbasa drumstick alcatra. Picanha ribeye cow brisket chuck shank tenderloin, pancetta strip steak meatloaf ham corned beef. Pig shank tenderloin, pork chop ham hock shoulder cupim venison filet mignon doner ground round short ribs.</p>
+			
+			
+			<p>Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard fanny pack mumblecore cornhole cray scenester. Assumenda narwhal occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl meh, food truck banh mi Etsy magna 90's duis typewriter banjo organic leggings Vice.</p>
+		</div>
+	</section>
+	
+	<figure class="overlay">
+	<img src="https://ununsplash.imgix.net/uploads/14132599381062b4d4ede/3b6f33f2?q=75&fm=jpg&s=ada04fb565c23d9c0a3c17c4ca55213d">
+	</figure>
+	
+	<section class="sect-content" id="sect-two">
+		<div class="row">
+			<h2><span>02</span> Section Two</h2>
+
+			<p>Spare ribs capicola cow, venison boudin ribeye jowl ground round shankle brisket flank meatball pork belly. Pancetta capicola ham hock porchetta.</p> 
+      
+   <p>Biltong shank cow, ribeye brisket pig cupim doner capicola pancetta. Venison spare ribs corned beef, porchetta beef frankfurter cupim fatback strip steak ball tip. Capicola tail pork belly pastrami flank. Tongue sausage pork loin, spare ribs shoulder swine pig capicola meatball rump boudin sirloin strip steak tail.</p>
+
+
+   <h3>Cosby Sweeters Are Dopetastic</h3>
+
+
+   <p>Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard fanny pack mumblecore cornhole cray scenester. Assumenda narwhal occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl meh, food truck banh mi Etsy magna 90's duis typewriter banjo organic leggings Vice.</p>
+
+
+   <h3>We Were Promised Smell-o-vision</h3>
+
+
+   <p>Bushwick Schlitz. Est Shoreditch small batch, dolor Schlitz sapiente twee stumptown ex. Duis Carles pickled, cornhole Thundercats McSweeney's minim PBR vegan Tumblr irony. Kogi eu Thundercats, sed scenester before they sold out et aesthetic. Elit cred Vice ethical pickled sartorial. Stumptown roof party freegan High Life vero, ea sed minim meggings.</p>
+    </div>
+  </section>
+
+	<figure class="overlay">
+		<img src="https://unsplash.imgix.net/uploads/1411589183965bdf6e141/5f468e98?q=75&fm=jpg&s=007333c388fb36767cbd152600bea6b8">
+	</figure>
+	
+	<section class="sect-content" id="sect-three">
+		<div class="row">
+  	<h2><span>03</span> Section Three</h2>
+
+
+   <p>Cosby sweater plaid shabby chic kitsch pour-over ex. Try-hard fanny pack mumblecore cornhole cray scenester. Assumenda narwhal occupy, Blue Bottle nihil culpa fingerstache. Meggings kogi vinyl meh, food truck banh mi Etsy magna 90's duis typewriter banjo organic leggings Vice.</p>
+   
+   <p>Spare ribs capicola cow, venison boudin ribeye jowl ground round shankle brisket flank meatball pork belly. Pancetta capicola ham hock porchetta. Biltong shank cow, ribeye brisket pig cupim doner capicola pancetta. Venison spare ribs corned beef, porchetta beef frankfurter cupim fatback strip steak ball tip. Capicola tail pork belly pastrami flank. Tongue sausage pork loin, spare ribs shoulder swine pig capicola meatball rump boudin sirloin strip steak tail.</p>
+ 	</div>
+ </section>
+</main>
+
+<!-- Footer
+================================================== -->	
+<footer>
+ <div class="row">
+   <p>A little thing made by <a href="http://twitter.com/stephenscaff" target="_blank">Stephen Scaff</a></p>
+ </div>
+</footer>
+
+<!-- Le javascript
+================================================== -->	
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type='text/javascript' src='js/easings.min.js'></script>
+<script type='text/javascript' src='js/webescrollin.js'></script>
+
+</body>
+</html>
