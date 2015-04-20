@@ -78,5 +78,9 @@ $('html').weBeScrollin({
   addActive: 'true',
   scrollSpeed: 900,
   scrollEase: 'easeInOutCubic',
-  complete : function() {},
+  complete : function() {
+  	
+  	$( 'nav, header, .toggle' ).removeClass('js-nav-open');
+  	
+  },
 });

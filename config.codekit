@@ -11,6 +11,61 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/demo\/images\/img1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320743,
+		"inputAbbreviatedPath": "\/demo\/images\/img1.jpg",
+		"outputAbbreviatedPath": "\/demo\/images\/img1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/demo\/images\/img2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 441412,
+		"inputAbbreviatedPath": "\/demo\/images\/img2.jpg",
+		"outputAbbreviatedPath": "\/demo\/images\/img2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/demo\/images\/img3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 252941,
+		"inputAbbreviatedPath": "\/demo\/images\/img3.jpg",
+		"outputAbbreviatedPath": "\/demo\/images\/img3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/demo\/images\/img4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 687462,
+		"inputAbbreviatedPath": "\/demo\/images\/img4.jpg",
+		"outputAbbreviatedPath": "\/demo\/images\/img4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/demo\/images\/img5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 501129,
+		"inputAbbreviatedPath": "\/demo\/images\/img5.jpg",
+		"outputAbbreviatedPath": "\/demo\/images\/img5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/demo\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -22,8 +77,8 @@
 		},
 	"\/demo\/js\/easings.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/demo\/js\/easings.min.js",
 		"outputAbbreviatedPath": "\/demo\/js\/min\/easings.min-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -33,8 +88,8 @@
 		},
 	"\/demo\/js\/jquery.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/demo\/js\/jquery.min.js",
 		"outputAbbreviatedPath": "\/demo\/js\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -42,23 +97,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/demo\/js\/min\/easings.min-min.js": {
+	"\/demo\/js\/min\/scripts-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/demo\/js\/min\/easings.min-min.js",
-		"outputAbbreviatedPath": "\/demo\/js\/min\/min\/easings.min-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/demo\/js\/min\/jquery.min-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/demo\/js\/min\/jquery.min-min.js",
-		"outputAbbreviatedPath": "\/demo\/js\/min\/min\/jquery.min-min-min.js",
+		"inputAbbreviatedPath": "\/demo\/js\/min\/scripts-min.js",
+		"outputAbbreviatedPath": "\/demo\/js\/min\/min\/scripts-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -75,10 +119,21 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/demo\/js\/scripts.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/demo\/js\/scripts.js",
+		"outputAbbreviatedPath": "\/demo\/js\/min\/scripts-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/demo\/js\/WeBeScrollin.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/demo\/js\/WeBeScrollin.js",
 		"outputAbbreviatedPath": "\/demo\/js\/min\/WeBeScrollin-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -150,6 +205,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/demo\/scss\/_typography.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demo\/scss\/_typography.scss",
+		"outputAbbreviatedPath": "\/demo\/css\/_typography.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/demo\/scss\/app.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -166,16 +237,17 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/min\/webescrollin-min.js": {
-		"fileType": 64,
-		"ignore": 1,
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/min\/webescrollin-min.js",
-		"outputAbbreviatedPath": "\/min\/min\/webescrollin-min-min.js",
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"outputPathIsSetByUser": 0
 		},
 	"\/webescrollin.js": {
 		"fileType": 64,
@@ -197,7 +269,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "WeBeScrollin",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "pencil_brown"
 	},
 "projectSettings": {

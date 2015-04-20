@@ -17,7 +17,7 @@
 
 <!-- Mobile Specific Meta
 ================================================== -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
 <!-- CSS
 ================================================== -->
@@ -25,7 +25,9 @@
 
 </head>
 
-<!-- heade
+
+
+<!-- header-main
 ================================================== -->
 <header>
 		<h1 class="logo"><a data-scroll="sect-top" href="#">s</a></h1>
@@ -37,6 +39,9 @@
      <li><a data-scroll="sect-three" href="#">Three</a></li>
    </ul>
   </nav>
+  <a class='toggle' id='trigger-nav'>
+  	<div class='menubars'></div>
+  </a>
 </header>
 
 
@@ -47,7 +52,7 @@
 	<section class="sect-content sect-banner" id="sect-top">
  	<div class="row">
   	<h1>We Be Scrollin</h1>
-    <p>A stupid simple jquery plugin for animating <br/>scroll to targets via data-attributes</p>
+    <p>A stupid simple jquery plugin for animating scroll to targets via data-attributes</p>
     
     <a class="btn" href="https://github.com/stephenscaff/WeBeScrollin">Download from Github</a>
 
@@ -160,7 +165,7 @@ $('html').weBeScrollin({
 		</section>
 
 <figure class="overlay">
-<img src="https://unsplash.imgix.net/photo-1422222948315-28aadb7a2cb8?q=75&fm=jpg&s=cfeadbd7a991e58b553bee29a7eeca55">
+<img src="images/img1.jpg">
 </figure>
 
 	<section class="sect-content" id="sect-one">
@@ -182,7 +187,7 @@ $('html').weBeScrollin({
 	</section>
 	
 	<figure class="overlay">
-	<img src="https://ununsplash.imgix.net/uploads/14132599381062b4d4ede/3b6f33f2?q=75&fm=jpg&s=ada04fb565c23d9c0a3c17c4ca55213d">
+	<img src="images/img2.jpg">
 	</figure>
 	
 	<section class="sect-content" id="sect-two">
@@ -208,7 +213,7 @@ $('html').weBeScrollin({
   </section>
 
 	<figure class="overlay">
-		<img src="https://unsplash.imgix.net/uploads/1411589183965bdf6e141/5f468e98?q=75&fm=jpg&s=007333c388fb36767cbd152600bea6b8">
+		<img src="images/img3.jpg">
 	</figure>
 	
 	<section class="sect-content" id="sect-three">
@@ -236,6 +241,7 @@ $('html').weBeScrollin({
 <script type='text/javascript' src='js/jquery.min.js'></script>
 <script type='text/javascript' src='js/easings.min.js'></script>
 <script type='text/javascript' src='js/webescrollin.js'></script>
+<script type='text/javascript' src='js/scripts.js'></script>
 
 </body>
 </html>

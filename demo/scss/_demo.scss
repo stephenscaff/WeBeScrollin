@@ -11,7 +11,9 @@ html {
 	width: 100%;
 }
 
-
+html, body{
+	height:	100%;
+}
 /*----------------------------------------------   
 --Typography
 -----------------------------------------------  */
@@ -66,24 +68,32 @@ img{
 --Headers
 -----------------------------------------------  */
 h1,h2,h3,h4,h5,h6{
-  font-weight: 600;
+  font-weight: 700;
   font-family: $font-header;
   text-rendering:optimizeLegibility; 
 }
 
 h1 {
   font-size: 4.2em;
-  font-size: 11vmin;
   line-height: 1.2;
-  margin-top: 0.80898876em;
+  margin-top: 0.81em;
   margin-bottom: 0;
+  @media (min-width: $mq-med) {
+  	font-size: 8vmin;
+  }
+  @media (min-width: $mq-xlarge) {
+  	font-size: 10vmin;
+  }
+  
 }
 h2 {
   font-size: 2.7em;
-  font-size: 8vmin;
-  line-height: 1.30909091em;
+  line-height: 1.31em;
   margin-top: 1.3em;
   margin-bottom: 0.7em;
+  @media (min-width: $mq-med) {
+  	font-size: 8vmin;
+  }
 }
 
 h2 span{
@@ -94,11 +104,14 @@ h2 span{
 }
 
 h3 {
-  font-size: 1.6em;
-  font-size: 4.8vmin;
+  font-size: 1.85em;
   line-height: 1.1em;
-  margin-top: 1.1em;
+  margin-top: 1.3em;
   margin-bottom: 0.7em;
+  @media (min-width: $mq-med) {
+  	font-size: 4.8vmin;
+  }
+  
 }
 h4 {
   font-size: 1.6em;
@@ -164,7 +177,7 @@ code.inline {
 --Row Class
 -----------------------------------------------  */
 .row{  
-  width: 95%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   
@@ -185,14 +198,8 @@ code.inline {
 main{
   position: relative;
   z-index: 1;
-  //padding-top: 2em;
 }
-hr.sep{
-  border-top:2px solid #aaa;
-  border-bottom: 0;
-  max-width: 20%;
-  margin: 0;
-}
+
 
 /*----------------------------------------------   
 --Media
@@ -233,7 +240,7 @@ table {
     text-align: left;
     border-top: 1px solid #eeeeee; }
   th {
-    font-weight: 600; }
+    font-weight: 700; }
   thead th {
     vertical-align: bottom; }
   thead {
@@ -285,63 +292,196 @@ table {
 --Header
 -----------------------------------------------  */
 header{
-  background: #fff;
-  background:	#465776;
-  background:	rgba(32, 60, 164, 0.91);
-  box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding: 0	0.5em;
-  z-index: 9;
-  
-  .logo{
-  	display: inline;
-  	width: 3em;
-  	vertical-align: middle;
-  	margin: 1em .2em 0;
-  	color: #fff;
-  	font-size: 1.8em;
-  	border-bottom: 3px solid #fff;
-  	position: relative;
-  	line-height: 1.6;
+ background: #fff;
+ background:	#465776;
+ background:	rgba(32, 60, 164, 0.91);
+ box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+ width: 100%;
+ position: fixed;
+ left: 0;
+ top: 0;
+ padding: 0	0.5em;
+ z-index: 9;
+ height:	4em;
+ 
+ /*--Logo--*/
+ .logo{
+ 	display: inline;
+ 	width: 3em;
+ 	vertical-align: middle;
+ 	margin: 1em .2em 0;
+ 	color: #fff;
+ 	font-size: 1.8em;
+ 	border-bottom: 3px solid #fff;
+ 	position: relative;
+ 	line-height: 1.6;
+ 	
+ 	a{
+ 		color:	#fff;
+ 		@include transition(all 0.7s ease);
+ 		
+ 		&:hover{
+ 			color:	rgba(255,255,255,0.8);
+ 			@include transition(all 0.7s ease);
+ 		}
+  }
+ }
+/*----------------------------------------------   
+--Header Nav
+-----------------------------------------------  */
+	nav{
+ 	@include transition(transform 0.5s cubic-bezier(.34,.95,.27,.98));
+ 
+  @media (max-width: $mq-med) {
+  	background:	rgba($color-alpha, 0.9);
+  	height:	100vh;
+  	width:	100%;
+  	top:	0;
+  	right:	0;
+  	position:	fixed;
+  	display:	table;
+  	@include transform(translate3d(100%, 0, 0));
+   @include transition(transform 0.7s ease);
+  }
   	
-  	a{
-  		color:	#fff;
-  		@include transition(all 0.7s ease);
-  		
-  		&:hover{
-  			color:	rgba(255,255,255,0.8);
-  			@include transition(all 0.7s ease);
-  		}
-  	}
+		@media (min-width: $mq-med) {
+			display:	inline;
+		}
+  ul{
+	  font-family: $font-header;
+	  margin: 0 auto;
+	  text-align:	center;
+	  display:	table-cell;
+	  vertical-align:	middle;
+	  
+	  @media (min-width: $mq-med) {
+	   padding: 1em 0.5em;
+	   margin:	0;
+	   display:	block;
+	   float: right;
+	   text-align:	left;
+	  }
   }
-  
-  nav{
-  	display:	inline;
-    ul{
-      font-family: $font-header;
-      display:block;
-      margin: 0;
-      padding: 1em 0.5em;
-      float: right;
-    }
-    li{
-      display:inline-block;
-      margin-left: 0.75em;
-    }
-    a{
-      color:	#fff;
-      text-decoration:none;
-      @include transition(all 0.7s ease);
-      
-      &:hover, &.active{
-      	color:	rgba(255,255,255,0.6);
-      	@include transition(all 0.7s ease);
-      }
-    }
-  }
+	 li{
+	 	display:	block;
+	 	padding:	0.5em 0;
+	 
+	 	@media (min-width: $mq-med) {
+	   display:inline-block;
+	   padding:	0;
+	   margin-left: 0.75em;
+	  } 
+	 }
+  a{
+	  color:	#fff;
+	  text-decoration:none;
+	  @include transition(all 0.7s ease);
+	  
+	  &:hover, &.active{
+	  	color:	rgba(255,255,255,0.6);
+	  	@include transition(all 0.7s ease);
+	  }
+	 }
+	}
+}
+
+/*----------------------------------------------   
+--Open Nav on Mobile
+-----------------------------------------------  */
+.js-nav-open{
+	nav{
+		@include transform(translate3d(0, 0, 0));
+		@include transition(transform 0.5s cubic-bezier(.34,.95,.27,.98))
+	}
+}
+
+/*----------------------------------------------   
+--Mobile Nav Toggle
+-----------------------------------------------  */
+.toggle {
+ height: 3em;
+ z-index: 9999;
+ padding: 1em .6em 1em 1em;
+ cursor: pointer;
+ position: fixed;
+ top: 0;
+ right: 1%;
+ @include transition(padding-top .5s cubic-bezier(0.1, 0.01, 0.3, 1));
+ 
+ /*-- Hide on Large --*/
+ @media (min-width: $mq-med) {
+ 	display:	none;
+ }
+ &:hover {
+ 	@include transition (top 0.5s ease-in-out)
+ }
+ &:hover .menubars:before {
+  top: -9px; }
+ &:hover .menubars:after {
+  top: 9px; }
+ span {
+  position: absolute;
+  top: .8em;
+  right: -.3em;
+  width: 3em;
+  color: #fff;
+ }
+}
+
+/*----------------------------------------------   
+--Mobile Nav: Menu Bars
+-----------------------------------------------  */
+.menubars {
+ width: 2em;
+ height: 1px;
+ margin: 0.75em 0;
+ background: #fff;
+ position: relative;
+ @include transition (top 0.3s ease-in-out);
+ 
+ &:before {
+   top: -8px; 
+ }
+ &:after {
+   top: 8px; 
+ }
+ &:after, &:before {
+   content: '';
+   display: block;
+   width: 2em;
+   height: 1px;
+   background: #fff;
+   position: absolute;
+   z-index: -1;
+   @include transition (all 0.3s ease-in-out); 
+ }
+} 
+
+/*----------------------------------------------   
+--Menu Bars Animate
+-----------------------------------------------  */
+.js-nav-open {
+	.menubars {
+	 background: none !important; 
+	}
+
+	.menubars:after {
+  top: 0 !important;
+  background: #fff !important;
+  @include transform(rotate(45deg));
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45), M12=-sin(45), M21=sin(45), M22=cos(45));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(45), M12=-sin(45), M21=sin(45), M22=cos(45))";
+  zoom: 1; 
+	}
+	
+	.menubars:before {
+  top: 0 !important;
+  background: #fff !important;
+  @include transform(rotate(-45deg));
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45), M12=-sin(-45), M21=sin(-45), M22=cos(-45));
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=cos(-45), M12=-sin(-45), M21=sin(-45), M22=cos(-45))";
+  zoom: 1;
+ }
 }
 
 /*----------------------------------------------   
@@ -349,15 +489,15 @@ header{
 -----------------------------------------------  */
 .sect-content{
   padding: 3em 0;
-  
-  p:first-of-type{
-  	font-size:	140%;
-  	line-height:	1.8;
-  }
-  
-  h2, h3, h4{
-  	color:	$color-alpha;
-  }
+ 
+ p:first-of-type{
+ 	font-size:	140%;
+ 	line-height:	1.8;
+ }
+ 
+ h2, h3, h4{
+ 	color:	$color-alpha;
+ }
 }
 
 
@@ -374,22 +514,27 @@ header{
 	width:	100%;
 	@include gradient-overlay(#005AFF, #000397, 0.85);
 
-.row{
-	display:	table-cell;
-	vertical-align:	bottom;
-	padding:	2em 2em 1em;
-	z-index:	999;
-	position:	relative;
-	
-	p{
-		font-size: 6vmin;
-		line-height: 1.5;
-		margin: 0.4em 0;
+	.row{
+		display:	table-cell;
+		vertical-align:	bottom;
+		padding:	2em 2em 1em;
+		z-index:	999;
+		position:	relative;
+		@media (min-width: $mq-med) {
+			padding:	2em 3em 1em;
 		}
-		
-		br{
-			@media (max-width: $mq-med) {
-			  display:	none;
+	
+		p{
+			font-size: 4vmin;
+			line-height: 1.5;
+			margin: 0.4em 0;
+				
+			@media (min-width: $mq-med) {
+				padding-right:	20%;
+			}
+			@media (min-width: $mq-xlarge) {
+				padding-right:	22%;
+				font-size: 6vmin;
 			}
 		}
 	}
@@ -403,3 +548,4 @@ footer{
 	padding:	1em 0;
 	border-top:	1px solid #ddd;
 }
+

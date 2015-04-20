@@ -43,7 +43,6 @@ $('html').weBeScrollin({
         var target = ('#' + $(this).data('scroll'));
         var $target = $(target);
         
-        
         //Add active Class
         if (options.addActive) {
           $('a[data-scroll]').removeClass('active');
