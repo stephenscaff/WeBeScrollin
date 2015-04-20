@@ -53,37 +53,7 @@ A few essential options are available, `offset` to make room for fixed navs, `sc
 | complete : function() {}   				| Callback function       						| Null
 
 
-<tr>
-<th scope="row">offset</th>
-<td>Scroll offset from top</td>
-<td>'0'</td>
-</tr>
-
-<tr>
-<th scope="row">scrollSpeed</th>
-<td>Speed of scroll animation</td>
-<td>700</td>
-</tr>
-
-<tr>
-<th scope="row">scrollEase</th>
-<td>add Easing equations</td>
-<td>Swing</td>
-</tr>
-
-<tr>
-<th scope="row">addActive</th>
-<td>Enable Active link class</td>
-<td>False</td>
-</tr>
-
-<tr>
-<th scope="row">complete : function() {}</th>
-<td>Callback function</td>
-<td>Null</td>
-</tr>
-
 
 ## Check it 
-Peep We Be Scrollin in action [Here→](http://webescrollin.stephenscaff.com/), 
+Peep We Be Scrollin in action [Here→](http://stephenscaff.com/plugins/webescrollin/), 
 
