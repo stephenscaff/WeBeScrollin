@@ -44,28 +44,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/demo\/images\/img4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 687462,
-		"inputAbbreviatedPath": "\/demo\/images\/img4.jpg",
-		"outputAbbreviatedPath": "\/demo\/images\/img4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/demo\/images\/img5.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 501129,
-		"inputAbbreviatedPath": "\/demo\/images\/img5.jpg",
-		"outputAbbreviatedPath": "\/demo\/images\/img5.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/demo\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -97,28 +75,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/demo\/js\/min\/scripts-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/demo\/js\/min\/scripts-min.js",
-		"outputAbbreviatedPath": "\/demo\/js\/min\/min\/scripts-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/demo\/js\/min\/webescrollin-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/demo\/js\/min\/webescrollin-min.js",
-		"outputAbbreviatedPath": "\/demo\/js\/min\/min\/webescrollin-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/demo\/js\/scripts.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -130,12 +86,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/demo\/js\/WeBeScrollin.js": {
+	"\/demo\/js\/webescrollin.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/demo\/js\/WeBeScrollin.js",
-		"outputAbbreviatedPath": "\/demo\/js\/min\/WeBeScrollin-min.js",
+		"inputAbbreviatedPath": "\/demo\/js\/webescrollin.js",
+		"outputAbbreviatedPath": "\/demo\/js\/min\/webescrollin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

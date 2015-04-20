@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1 {
-  font-size: 4.2em;
+  font-size: 3.5em;
   line-height: 1.2;
   margin-top: 0.81em;
   margin-bottom: 0;
@@ -525,12 +525,13 @@ header{
 		}
 	
 		p{
-			font-size: 4vmin;
+			font-size: 120%;
 			line-height: 1.5;
 			margin: 0.4em 0;
 				
 			@media (min-width: $mq-med) {
 				padding-right:	20%;
+				font-size: 4vmin;
 			}
 			@media (min-width: $mq-xlarge) {
 				padding-right:	22%;
